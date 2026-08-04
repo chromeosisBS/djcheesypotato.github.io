@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | DJ Cheesy Potato</title>
+    
+    <link rel="icon" type="image/png" href="logo_small.png">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-image">
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="logo_small.png" alt="DJ Logo">
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="socials.html">Socials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-content">
+        <h2 class="section-title">Full-Service Production</h2>
+        <p class="text-center" style="max-width: 700px; margin: 0 auto 3rem; color: var(--text-muted);">
+            In addition to DJing, I provide comprehensive audio and visual production to ensure your event looks and sounds flawless from start to finish.
+        </p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3 style="color: var(--secondary-accent);">DJ Entertainment</h3>
+                <p>High-energy, open-format mixing tailored to your crowd. Whether it's a wedding, corporate gala, School Dance, or private party, I deliver seamless transitions and a packed dance floor.</p>
+            </div>
+            
+            <div class="card">
+                <h3 style="color: var(--primary-accent);">Lighting Design</h3>
+                <p>Transform your venue with intelligent, sound-reactive stage lighting that perfectly matches your event's color scheme and vibe.</p>
+            </div>
+            
+            <div class="card">
+                <h3 style="color: var(--secondary-accent);">Live Sound</h3>
+                <p>Professional front-of-house (FOH) mixing for live bands and performers. I provide the gear and the ear to ensure crystal clear vocals and a punchy, balanced mix.</p>
+            </div>
+
+            <div class="card">
+                <h3 style="color: var(--primary-accent);">Live Stream Broadcasting</h3>
+                <p>Bring your event to a global audience. I offer high-quality, multi-camera video broadcasting and direct audio feeds for seamless streaming to platforms like YouTube, Twitch, or private links.</p>
+            </div>
+        </div>
+        
+        <div class="text-center" style="margin-top: 4rem;">
+            <a href="contact.html" class="btn">Contact us</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> All Rights Reserved. Powered by GitHub Pages.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        mobileToggle.addEventListener('click', () => { 
+            navLinks.classList.toggle('active'); 
+        });
+    </script>
+</body>
+</html>

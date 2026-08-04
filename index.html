@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Cheesy Potato</title>
+    
+    <link rel="icon" type="image/png" href="logo_small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="SetupTimelapse.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="video-overlay"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="logo_small.png" alt="DJ Logo">
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="socials.html">Posts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <img src="Logo_wide.png" alt="DJ Main Logo" class="hero-logo-img">
+        <p>Competitively Priced AV & DJ services for your next event.</p>
+        <a href="contact.html" class="btn">Book Your Event</a>
+    </header>
+
+    <footer>
+        <p>&copy; <span id="year"></span> All Rights Reserved. Powered by GitHub Pages.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
