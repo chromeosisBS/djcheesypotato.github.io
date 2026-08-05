@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /contract.pdf
+Disallow: /SetupTimelapse.mp4
